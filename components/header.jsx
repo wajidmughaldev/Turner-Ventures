@@ -21,13 +21,14 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+            {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">TV</span>
             </div>
             <div className="hidden sm:block">
               <p className="font-bold text-foreground">Turner Ventures</p>
               <p className="text-xs text-muted">Demolition & Removal</p>
-            </div>
+            </div> */}
+            <img src="./logo.png" alt="" className=" w-20 md:w-25" />
           </Link>
 
           {/* Desktop Navigation */}
