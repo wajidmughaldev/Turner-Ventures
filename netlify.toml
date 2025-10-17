@@ -1,0 +1,8 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  # Increase function timeout/body size a bit (still be mindful of limits)
+  node_bundler = "esbuild"
+
+# Optional: if you serve from a subpath, set redirects as needed.

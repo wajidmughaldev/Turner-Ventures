@@ -10,31 +10,31 @@ export default function Gallery() {
     {
       id: 1,
       title: "Complete Demolition",
-      before: "/gallery-before-1.jpg",
-      after: "/gallery-after-1.jpg",
+      before: "/gallery-before-5.jpg",
+      after: "/gallery-after-5.jpg",
       description: "Full structure removal and site cleanup",
     },
     {
       id: 2,
       title: "Concrete Removal",
-      before: "/gallery-before-2.jpg",
-      after: "/gallery-after-2.jpg",
+      before: "/gallery-before-6.jpg",
+      after: "/gallery-after-6.jpg",
       description: "Driveway and foundation removal",
     },
-    {
-      id: 3,
-      title: "Junk Removal",
-      before: "/gallery-before-3.jpg",
-      after: "/gallery-after-3.jpg",
-      description: "Complete property cleanup",
-    },
-    {
-      id: 4,
-      title: "Landscape Removal",
-      before: "/gallery-before-4.jpg",
-      after: "/gallery-after-4.jpg",
-      description: "Tree and debris removal",
-    },
+    // {
+    //   id: 3,
+    //   title: "Junk Removal",
+    //   before: "/gallery-before-3.jpg",
+    //   after: "/gallery-after-3.jpg",
+    //   description: "Complete property cleanup",
+    // },
+    // {
+    //   id: 4,
+    //   title: "Landscape Removal",
+    //   before: "/gallery-before-4.jpg",
+    //   after: "/gallery-after-4.jpg",
+    //   description: "Tree and debris removal",
+    // },
   ]
 
   const goToPrevious = () => {
@@ -139,7 +139,9 @@ export default function Gallery() {
             </div>
 
             {/* CTA */}
-            <button className="btn-primary w-full text-lg">Get Similar Results</button>
+            <a href="tel:+17609855794" className="block ">
+            <button className="btn-primary w-full text-lg cursor-pointer">Get Similar Results</button>
+            </a>
 
             {/* Thumbnail Grid */}
             <div className="grid grid-cols-4 gap-3">

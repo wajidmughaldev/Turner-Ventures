@@ -91,10 +91,10 @@ export default function FAQ() {
           <h3 className="text-2xl font-bold mb-2">Still have questions?</h3>
           <p className="mb-6">Contact us directly and we'll be happy to help.</p>
           <a
-            href="tel:+1234567890"
+            href="tel:+17609855794"
             className="inline-block bg-accent text-foreground px-8 py-3 rounded-lg font-bold hover:bg-accent-dark transition-colors"
           >
-            Call (480) 555-0123
+            Call (760)  985 5794
           </a>
         </div>
       </div>

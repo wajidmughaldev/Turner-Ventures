@@ -47,11 +47,11 @@ export default function Header() {
           {/* CTA Buttons */}
           <div className="flex items-center gap-3">
             <a
-              href="tel:+1234567890"
+              href="tel:+17609855794"
               className="hidden sm:flex items-center gap-2 text-primary hover:text-primary-dark transition-colors font-semibold"
             >
               <Phone size={20} />
-              <span className="hidden lg:inline">(480) 555-0123</span>
+              <span className="hidden lg:inline">(760)  985 5794</span>
             </a>
             <button className="btn-primary text-sm md:text-base">Free Estimate</button>
 

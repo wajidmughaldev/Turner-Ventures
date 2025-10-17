@@ -47,11 +47,56 @@ export default function EstimateForm() {
     }))
   }
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-    alert("Thank you! We'll contact you soon with your estimate.")
-    setStep(1)
+  // const handleSubmit = (e) => {
+  //   e.preventDefault()
+  //   console.log("Form submitted:", formData)
+  //   alert("Thank you! We'll contact you soon with your estimate.")
+  //   setStep(1)
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     phone: "",
+  //     address: "",
+  //     city: "",
+  //     services: [],
+  //     timeline: "",
+  //     budget: "",
+  //     description: "",
+  //     images: [],
+  //   })
+  // }
+
+
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  // Build FormData (multipart)
+  const fd = new FormData();
+  fd.append("name", formData.name);
+  fd.append("email", formData.email);
+  fd.append("phone", formData.phone);
+  fd.append("address", formData.address);
+  fd.append("city", formData.city);
+  fd.append("timeline", formData.timeline);
+  fd.append("budget", formData.budget);
+  fd.append("description", formData.description || "");
+
+  // services[] as multiple fields
+  formData.services.forEach((s) => fd.append("services", s));
+
+  // files (field name must match "images" in the function)
+  formData.images.forEach((file) => fd.append("images", file, file.name));
+
+  try {
+    const res = await fetch("/.netlify/functions/send-estimate", {
+      method: "POST",
+      body: fd, // IMPORTANT: no Content-Type header here; browser sets it
+    });
+
+    if (!res.ok) throw new Error("Failed to send");
+
+    alert("Thank you! We'll contact you soon with your estimate.");
+    setStep(1);
     setFormData({
       name: "",
       email: "",
@@ -63,8 +108,13 @@ export default function EstimateForm() {
       budget: "",
       description: "",
       images: [],
-    })
+    });
+  } catch (err) {
+    console.error(err);
+    alert("Sorry, something went wrong sending your request.");
   }
+};
+
 
   const services = [
     "Demolition",

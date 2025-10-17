@@ -13,9 +13,9 @@ export default function Footer() {
             {/* Company Info */}
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                  <span className="text-foreground font-bold">TV</span>
-                </div>
+                  <img src="./logo.png" alt="" className=" w-20 md:w-25" />
+                {/* <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center"> */}
+                {/* </div> */}
                 <div>
                   <p className="font-bold">Turner Ventures</p>
                   <p className="text-xs text-gray-400">Demolition & Removal</p>
@@ -96,8 +96,8 @@ export default function Footer() {
               <ul className="space-y-3 text-sm">
                 <li className="flex items-start gap-3">
                   <Phone size={18} className="text-accent flex-shrink-0 mt-0.5" />
-                  <a href="tel:+1234567890" className="text-gray-400 hover:text-accent transition-colors">
-                    (480) 555-0123
+                  <a href="tel:+17609855794" className="text-gray-400 hover:text-accent transition-colors">
+                    (760)  985 5794
                   </a>
                 </li>
                 <li className="flex items-start gap-3">
@@ -111,7 +111,9 @@ export default function Footer() {
                 </li>
                 <li className="flex items-start gap-3">
                   <MapPin size={18} className="text-accent flex-shrink-0 mt-0.5" />
+                  <a href="https://maps.app.goo.gl/4GQeoJP4XEorHzAKA" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-accent transition-colors">
                   <span className="text-gray-400">Gilbert, Arizona</span>
+                </a>
                 </li>
               </ul>
             </div>

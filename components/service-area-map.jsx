@@ -1,14 +1,41 @@
 "use client"
 
 export default function ServiceAreaMap() {
-  const serviceAreas = ["Gilbert", "Phoenix", "Chandler", "Tempe", "Mesa", "Scottsdale", "Ahwatukee", "Laveen"]
+  const serviceAreas = [
+  "Apache Junction",
+  "Avondale",
+  "Buckeye",
+  "Casa Grande",
+  "Cave Creek",
+  "Chandler",
+  "Coolidge",
+  "Flagstaff",
+  "Florence",
+  "Gilbert",
+  "Goodyear",
+  "Laveen",
+  "Maricopa",
+  "Mesa",
+  "Payson",
+  "Peoria",
+  "Phoenix",
+  "Prescott",
+  "Queen Creek",
+  "San Tan Valley",
+  "Scottsdale",
+  "Show Low",
+  "Surprise",
+  "Tempe"
+];
+
+
 
   return (
     <section className="section-padding bg-muted-light">
       <div className="section-container">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Map */}
-          <div className="relative h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl bg-gray-200">
+          <div className="relative h-96 md:h-[1000px] rounded-xl overflow-hidden shadow-2xl bg-gray-200">
             <img
               src="/service-area-map.jpg"
               alt="Service area map for Phoenix metro"
@@ -29,7 +56,7 @@ export default function ServiceAreaMap() {
             </div>
 
             {/* Service Area Grid */}
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-3 gap-3">
               {serviceAreas.map((area) => (
                 <div
                   key={area}
@@ -48,7 +75,7 @@ export default function ServiceAreaMap() {
                 area.
               </p>
               <a
-                href="tel:+1234567890"
+                href="tel:+17609855794"
                 className="inline-block bg-accent text-foreground px-6 py-2 rounded-lg font-bold hover:bg-accent-dark transition-colors"
               >
                 Call Us Today
