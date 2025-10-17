@@ -113,6 +113,17 @@ exports.handler = async (event) => {
       contentType: f.mimetype || "application/octet-stream",
     }));
 
+   try {
+  await transporter.verify();
+} catch (e) {
+  console.error("SMTP verify failed:", e);
+  return {
+    statusCode: 500,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ok: false, error: "SMTP login failed: " + (e?.message || "verify") }),
+  };
+}
+
     await transporter.sendMail({
       from: process.env.FROM_EMAIL,
       to: process.env.TO_EMAIL,
