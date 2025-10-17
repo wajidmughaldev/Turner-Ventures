@@ -1,4 +1,5 @@
 import { Poppins, Inter } from "next/font/google"
+import Script from "next/script";
 import "./globals.css"
 
 const poppins = Poppins({
@@ -54,7 +55,28 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>{children}
+
+        {/* tawk.to widget */}
+        <Script id="tawk-init" strategy="afterInteractive">
+          {`
+            // Optional: pre-config (you can set visitor later from your form)
+            window.Tawk_API = window.Tawk_API || {};
+            window.Tawk_LoadStart = new Date();
+
+            // Example: open proactively after 12s (delete if you don't want this)
+            // window.Tawk_API.onLoad = function () {
+            //   setTimeout(function(){ window.Tawk_API.maximize && window.Tawk_API.maximize(); }, 12000);
+            // };
+          `}
+        </Script>
+
+        <Script
+          id="tawk-script"
+          src="https://embed.tawk.to/68f2ac377ab6631950fd7a88/1j7pv1epk"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   )
 }
