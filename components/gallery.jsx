@@ -139,7 +139,7 @@ export default function Gallery() {
             </div>
 
             {/* CTA */}
-            <a href="tel:+17609855794" className="block ">
+            <a href="#freeEstimate" className="block ">
             <button className="btn-primary w-full text-lg cursor-pointer">Get Similar Results</button>
             </a>
 

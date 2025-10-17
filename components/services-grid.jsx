@@ -119,7 +119,12 @@ export default function ServicesGrid() {
                   : "Select services above and get a free estimate tailored to your needs."}
               </p>
             </div>
-            <button className="btn-primary whitespace-nowrap">Get Free Estimate</button>
+             <a
+              href="#freeEstimate"
+              className="hidden sm:flex items-center gap-2 text-primary hover:text-primary-dark transition-colors font-semibold"
+            >
+            <button className="btn-primary whitespace-nowrap cursor-pointer">Get Free Estimate</button>
+            </a>
           </div>
         </div>
       </div>

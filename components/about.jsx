@@ -59,8 +59,9 @@ export default function About() {
                 )
               })}
             </div>
-
+              <a href="tel:+17609855794">
             <button className="btn-primary">Schedule a Consultation</button>
+          </a>
           </div>
 
           {/* Right Image */}

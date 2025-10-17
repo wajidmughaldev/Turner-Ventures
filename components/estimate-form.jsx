@@ -131,7 +131,7 @@ export default function EstimateForm() {
   const isStep3Valid = formData.timeline && formData.budget
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-white" id="freeEstimate">
       <div className="section-container max-w-2xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Get Your Free Estimate</h2>

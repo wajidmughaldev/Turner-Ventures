@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
+import { useState } from "react";
+import Link from "next/link";
+import { Menu, X, Phone } from "lucide-react";
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { label: "Services", href: "#services" },
@@ -13,7 +13,7 @@ export default function Header() {
     { label: "About", href: "#about" },
     { label: "Reviews", href: "#reviews" },
     { label: "FAQ", href: "#faq" },
-  ]
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
@@ -51,10 +51,13 @@ export default function Header() {
               className="hidden sm:flex items-center gap-2 text-primary hover:text-primary-dark transition-colors font-semibold"
             >
               <Phone size={20} />
-              <span className="hidden lg:inline">(760)  985 5794</span>
+              <span className="hidden lg:inline">(760) 985 5794</span>
             </a>
-            <button className="btn-primary text-sm md:text-base">Free Estimate</button>
-
+            <a href="#freeEstimate">
+              <button className="btn-primary text-sm md:text-base">
+                Free Estimate
+              </button>
+            </a>
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -82,5 +85,5 @@ export default function Header() {
         )}
       </div>
     </header>
-  )
+  );
 }

@@ -39,15 +39,18 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <a href="#freeEstimate">
               <button className="flex items-center justify-center gap-2 px-8 py-4 bg-accent text-accent-foreground rounded-lg font-bold hover:opacity-90 transition-opacity text-lg">
                 Get Free Estimate
                 <ArrowRight size={20} />
               </button>
+              </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+17609855794"
                 className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-bold hover:bg-white hover:text-primary transition-colors text-lg"
               >
-                Call Now: (480) 555-0123
+                
+                Call Now: (760) 9855 794
               </a>
             </div>
           </div>
