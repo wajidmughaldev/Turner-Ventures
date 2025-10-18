@@ -21,6 +21,20 @@ export default function Gallery() {
       after: "/gallery-after-6.jpg",
       description: "Driveway and foundation removal",
     },
+     {
+      id: 3,
+      title: "Concrete Removal",
+      before: "/gallery-before-7.jpg",
+      after: "/gallery-after-7.jpg",
+      description: "Driveway and foundation removal",
+    },
+    {
+      id: 4,
+      title: "Concrete Removal",
+      before: "/gallery-before-8.jpg",
+      after: "/gallery-after-8.jpg",
+      description: "Driveway and foundation removal",
+    },
     // {
     //   id: 3,
     //   title: "Junk Removal",

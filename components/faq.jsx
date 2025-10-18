@@ -94,7 +94,7 @@ export default function FAQ() {
             href="tel:+17609855794"
             className="inline-block bg-accent text-foreground px-8 py-3 rounded-lg font-bold hover:bg-accent-dark transition-colors"
           >
-            Call (760)  985 5794
+            Call (760) 985-5794
           </a>
         </div>
       </div>

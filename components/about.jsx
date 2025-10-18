@@ -36,7 +36,7 @@ export default function About() {
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">About Turner Ventures</h2>
               <p className="text-lg text-muted leading-relaxed mb-4">
                 Founded by Nick Turner, Turner Ventures AZ has been serving the Gilbert and Phoenix metro area with
-                professional demolition and junk removal services since 2015. We pride ourselves on delivering
+                professional demolition and junk removal services since 2024. We pride ourselves on delivering
                 exceptional results with integrity and professionalism.
               </p>
               <p className="text-lg text-muted leading-relaxed">
@@ -72,7 +72,7 @@ export default function About() {
               className="w-full h-full object-cover rounded-xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-accent text-foreground p-6 rounded-xl shadow-lg max-w-xs">
-              <p className="font-bold text-2xl mb-1">20+ Years</p>
+              <p className="font-bold text-2xl mb-1">15 Years</p>
               <p className="text-sm">of combined demolition expertise</p>
             </div>
           </div>

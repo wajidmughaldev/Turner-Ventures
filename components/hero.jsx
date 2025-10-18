@@ -50,7 +50,7 @@ export default function Hero() {
                 className="flex items-center justify-center gap-2 px-8 py-4 border-2 border-white text-white rounded-lg font-bold hover:bg-white hover:text-primary transition-colors text-lg"
               >
                 
-                Call Now: (760) 9855 794
+                Call Now: (760) 985-5794
               </a>
             </div>
           </div>

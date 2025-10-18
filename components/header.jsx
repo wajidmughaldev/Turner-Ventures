@@ -51,7 +51,7 @@ export default function Header() {
               className="hidden sm:flex items-center gap-2 text-primary hover:text-primary-dark transition-colors font-semibold"
             >
               <Phone size={20} />
-              <span className="hidden lg:inline">(760) 985 5794</span>
+              <span className="hidden lg:inline">(760) 985-5794</span>
             </a>
             <a href="#freeEstimate">
               <button className="btn-primary text-sm md:text-base">
